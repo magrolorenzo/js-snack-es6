@@ -28,9 +28,13 @@ let max_ascii = 122;
 
 const new_array = main_array.map((element) =>{
     let {name, surname} = element;
-    let new_elem = {};
-    new_elem.name = name;
-    new_elem.surname = surname;
+    
+    let new_elem = {
+        name,
+        surname
+    };
+    // new_elem.name = name;
+    // new_elem.surname = surname;
     return new_elem;
 });
 
