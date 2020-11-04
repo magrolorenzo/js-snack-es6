@@ -41,5 +41,8 @@ const new_obj = obj.filter((element, index, array) =>{
         return element
     };
 });
+new_obj.forEach((item, i) => {
+    console.log(item);
+});
 
 console.log(new_obj);
