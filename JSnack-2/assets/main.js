@@ -32,11 +32,14 @@ const obj = [
     }
 ];
 
-const new_obj = [];
 
 const num1 = parseInt(prompt("Inserisci posizione iniziale"));
 const num2 = parseInt(prompt("Inserisci posizione finale"));
 
-new_obj = obj.filter((element, index, array) =>{
-    array.forEach
-}
+const new_obj = obj.filter((element, index, array) =>{
+    if((index >= num1) && (index <= num2)){
+        return element
+    };
+});
+
+console.log(new_obj);
