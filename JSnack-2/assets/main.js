@@ -37,9 +37,13 @@ const num1 = parseInt(prompt("Inserisci posizione iniziale"));
 const num2 = parseInt(prompt("Inserisci posizione finale"));
 
 const new_obj = obj.filter((element, index, array) =>{
-    if((index >= num1) && (index <= num2)){
-        return element
-    };
+
+    // if((index >= num1) && (index <= num2)){
+    //     return element;
+    // };
+
+    return ((index >= num1) && (index <= num2));
+
 });
 new_obj.forEach((item, i) => {
     console.log(item);
